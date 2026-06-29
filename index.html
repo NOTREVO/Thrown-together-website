@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrown Together 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/300ppi/favicon.png">
+
+    <style> 
+        @font-face {
+          font-family: neue montreal;
+          src: url(fonts/NeueMontreal-Bold.otf);
+        }
+
+        @keyframes appear{
+            from{
+              opacity: 0;
+              scale: 0.5;
+            }
+            to{
+              opacity: 1;
+              scale: 1; 
+            }
+        }
+    </style>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll(".fade-in");
+    
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target); // animate once
+          }
+        });
+      }, {
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px"
+      });
+    
+      elements.forEach(el => observer.observe(el));
+    });
+    </script>
+
+</head>
+
+
+<body style="background-color:rgb(255, 255, 255);">
+
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+
+  <!-- NAV BAR -->
+<nav class="navbar">
+
+  <a href="#mail" class="logo">
+    <img src="assets/SVG/navbar-logo.svg" alt="London Juggling Festival">
+  </a>
+
+  <div class="icons">
+    <a href="#mail">
+      <img src = "assets/SVG/mail.svg">
+    </a>
+
+    <a href="https://www.instagram.com/londonjugglingfestival/">
+      <img src="assets/SVG/instagram-logo.svg" alt="Instagram">
+    </a>
+
+    <a href="https://www.facebook.com/profile.php?id=61584191492460">
+      <img src="assets/SVG/facebook-logo.svg" alt="Facebook">
+    </a>
+  </div>
+
+</nav>
+
+    <img src="assets/300ppi/Banner@300x.webp" style="width: 100dvw; height: auto; padding: 0; margin: 0;">
+
+    <section id="intro">
+      <div class="logos">
+        <div class="logos-slide">
+          <img src="assets/SVG/andcircus-logo.svg">
+          <img src="assets/SVG/at-logo.svg">
+          <img src="assets/SVG/catchers-logo.svg">
+          <img src="assets/SVG/elch-logo.svg">
+          <img src="assets/SVG/jacksons-logo.svg">
+          <img src="assets/SVG/ncca-logo.svg">
+          <img src="assets/SVG/oddballs-logo.svg">
+          <img src="assets/SVG/ucl-logo.svg">
+        
+          <img src="assets/SVG/andcircus-logo.svg">
+          <img src="assets/SVG/at-logo.svg">
+          <img src="assets/SVG/catchers-logo.svg">
+          <img src="assets/SVG/elch-logo.svg">
+          <img src="assets/SVG/jacksons-logo.svg">
+          <img src="assets/SVG/ncca-logo.svg">
+          <img src="assets/SVG/oddballs-logo.svg">
+          <img src="assets/SVG/ucl-logo.svg">
+        </div>
+      </div>
+    </section>
+
+  <section id ="watch-join-in">
+
+    <!-- <div class = "flood-wrapper">
+          <div class = "watch-wrapper">
+            <a href = "#performances"><img src = "assets/IMG_03.jpg"></a>
+          </div>
+          <div class = "join-in-wrapper">
+            <a href = "#expect"><img src = "assets/300ppi/join-in.webp"></a>
+          </div>
+    </div> -->
+
+  </section>  
+
+    <script>
+      var copy = document.querySelector(".logos-slide").cloneNode(true);
+      document.querySelector(".logos").appendChild(copy);
+    </script>
+
+
+    </section>
+
+        <section id="performances">
+    <div class = "purple-background">
+       <div class = "content-wrapper fade-scroll">
+            <h1><b>PERFORMANCES</b></h1>
+            <p class = "white-text ">We have some amazing shows lined up for this year's <i>Thrown Together</i> festival! These will be taking place at Jacksons Lane from Friday 23 - Sunday 25 October.</p>
+            <p class = "white-text fade-scroll" style ="color: hotpink;">Check out who we have lined up! (click the images for video)</p>
+            <div class = "image-grid">
+                <a href="https://www.instagram.com/p/DU5nwVljINJ/"><img class = "performer" src="assets/300ppi/oma@300x.webp"></a>
+                <a href="https://www.instagram.com/reels/DSjl12KiFfT/"><img class = "performer" src="assets/300ppi/no-news@300x.webp"></a>
+                <a href="https://www.youtube.com/watch?v=vETw6jJFE2w"><img class = "performer" src="assets/300ppi/on@300x (2).webp"></a>
+                <a href="https://youtu.be/IXvuBmsuU84"><img class = "performer" src="assets/300ppi/steve@300x.webp"></a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="expect">
+    <div class = "white-background fade-scroll">
+        <div class="content-wrapper fade-scroll">
+          <div class = "join-in-section-wrapper">
+            <div class = "join-in-text">
+            <h2><b>ACTIVITIES</b></h2>
+            <p class = "colour-text">We will be hosting a wide array of activities including workshops, practice spaces, a youth show, an open stage, stalls, games and fire jams! </p> 
+            <p class ="black-text"> These will take place at the National Centre for Circus Arts on Saturday 24 and Sunday 25 October, 9am – 6pm.</p>   
+            <p class = "colour-text">LED jam or Renegade:</p> 
+            <p class = "black-text">On the evening of Wednesday 28 October there will be a community activity at East London Circus Hub (ELCH).</p>
+            <p class = "colour-text">More events and details to follow</p>
+            </div>
+            <div class = "join-in-img">
+              <img src="assets/300ppi/join-in-section-image.webp">
+            </div>
+          </div>
+        </div>
+    </div>
+    </section>
+
+    
+    <section id="about">
+      <div class = "purple-background fade-scroll">
+        <div class = "content-wrapper fade-scroll">
+          <h1>ABOUT</h1>
+          <p class = "white-text"> <i>Thrown Together</i> is London’s Juggling & Flow Arts Festival where you can watch inspiring performers from around the world and join in workshops and other events. Tickets will go on sale during the summer - check back here or follow us on social media to find out exactly when.
+          <br>
+          <br>
+          What is Flow Arts? Where juggling, at its core, is the throwing and catching of objects, flow arts is where object manipulation meets dance and the creative exploration of movement.
+          <br>
+          <br>
+          Volunteer-organised and not-for-profit, <i>Thrown Together</i> was initiated by members of two London juggling and flow arts workshops: <i><a href = "https://www.instagram.com/catchers.in.the.rye/">Catchers in the Rye</a></i> and <i><a href ="https://www.instagram.com/spinningat/">Spinning@</a></i>, rapidly joined by the <i><a href ="https://www.nationalcircus.org.uk/">National Centre for Circus Arts</a>, <a href ="https://www.jacksonslane.org.uk/">Jacksons Lane theatre</a>, <a href ="https://www.oddballs.co.uk/">Oddballs</a>, <a href ="https://www.instagram.com/eastlondoncircushub/?hl=en">East London Circus Hub</a>, <a href ="https://www.instagram.com/ucl_balls">UCL Balls!</a>, and <a href ="https://www.andcircus.co.uk/">AND Circus.</a></i> 2026 is the first year so you are in at the beginning! Meanwhile, the 2027 festival is in preparation….
+          </p>
+          <br>
+          <p class = "white-text">More details and activities coming soon! Please email us if you have an activity you would like to propose to run:</p>
+          <p class = "white-text" style= "color: #ff69b4;"><a href = "mailto: info@throwntogether.org" id="mail">info@throwntogether.org</a></p>
+          
+        </div>
+      </div>
+    </section>
+
+</body>
+</html>
