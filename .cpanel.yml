@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/cvcmsjqt/public_html/
+    - /bin/cp -R . $DEPLOYPATH
+    - rm -rf $DEPLOYPATH/.git
+    - rm -f $DEPLOYPATH/.cpanel.yml
